@@ -1,0 +1,21 @@
+/* src/components/Hero/Hero.css */
+
+.hero-section {
+  background-color: var(--secondary-color);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content h2 {
+    margin-top: 2rem;
+}

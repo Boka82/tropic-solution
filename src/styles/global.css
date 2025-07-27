@@ -1,0 +1,54 @@
+/* src/styles/global.css */
+
+/* Definicija osnovnih varijabli za boje i fontove */
+:root {
+  --primary-color: #0a4c6e; /* Tamno plava */
+  --secondary-color: #f2f7fa; /* Svijetlo plava pozadina */
+  --accent-color: #4cb8e6; /* Svijetlo plava za akcente */
+  --text-color: #333;
+  --light-text-color: #fff;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Resetiranje osnovnih stilova */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3aa3d1;
+}

@@ -1,0 +1,37 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.footer h2, .footer h4 {
+    color: var(--light-text-color);
+}
+
+.footer-cta {
+    margin-bottom: 3rem;
+}
+
+.footer-cta h2 {
+    font-size: 2rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.footer-contact div {
+    margin: 1rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--accent-color);
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
