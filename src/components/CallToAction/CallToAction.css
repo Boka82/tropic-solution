@@ -1,0 +1,89 @@
+/* src/components/CallToAction/CallToAction.css */
+
+.call-to-action-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.call-to-action-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/pozadina5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.call-to-action-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 35, 47, 0.7); /* Tamni overlay za bolju čitljivost teksta */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.call-to-action-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.call-to-action-title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #4fd1c7;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .call-to-action-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .call-to-action-title {
+    font-size: 2.5rem;
+  }
+  
+  .call-to-action-content {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .call-to-action-title {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  .call-to-action-content {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .call-to-action-title {
+    font-size: 1.5rem;
+  }
+  
+  .call-to-action-background {
+    background-attachment: scroll; /* Fixed može biti problematičan na mobilnim uređajima */
+  }
+}
