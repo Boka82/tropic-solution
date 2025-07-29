@@ -1,34 +1,44 @@
 import React from 'react';
 import './Services.css';
+import managedITImage from '../../assets/Managed IT Services.png';
+import itSecurityImage from '../../assets/IT Security.png';
+import itConsultingImage from '../../assets/IT Consulting.png';
 
 const servicesData = [
   {
     title: 'Managed IT Services',
-    description: 'Comprehensive IT management and support to keep your business running smoothly. From network monitoring to system maintenance, we handle it all.',
-      },
+    description: 'Give a detailed description of the service being provided here.',
+    image: managedITImage
+  },
   {
     title: 'IT Security',
-    description: 'Protect your business with enterprise-grade security solutions. Cybersecurity monitoring, threat detection, and data protection services.',
-      },
+    description: 'Give a detailed description of the service being provided here.',
+    image: itSecurityImage
+  },
   {
     title: 'IT Consulting',
-    description: 'Strategic technology consulting to help your business grow. Technology planning, digital transformation, and IT strategy development.',
-      },
+    description: 'Give a detailed description of the service being provided here.',
+    image: itConsultingImage
+  },
 ];
 
 const Services = () => {
   return (
     <section id="services" className="services-section">
       <div className="container">
-        <h2 className="section-title">Our Services</h2>
+        <div className="services-header">
+          <h2 className="services-title">Our Services</h2>
+        </div>
         <div className="services-grid">
           {servicesData.map((service, index) => (
             <div className="service-card" key={index}>
-              <div className="service-icon">
-                <div className="icon-placeholder"></div>
+              <div className="service-image">
+                <img src={service.image} alt={service.title} />
               </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           ))}
         </div>

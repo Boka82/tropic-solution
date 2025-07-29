@@ -18,75 +18,78 @@
 }
 
 .testimonials-section .section-title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #4fd1c7 !important;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .testimonials-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .testimonial-card {
   background: transparent;
   border: none;
   padding: 0;
-  text-align: center;
-  flex: 0 1 350px;
-  max-width: 350px;
+  text-align: left;
+  flex: 1;
+  max-width: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .testimonial-icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 2rem;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0;
   color: #ffffff;
   opacity: 0.7;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .testimonial-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
 }
 
 .testimonial-name {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #4fd1c7;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .testimonial-company {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #4fd1c7;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .testimonial-quote {
   color: #ecf0f1;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
   opacity: 0.9;
-  max-width: 300px;
+  max-width: none;
   font-weight: 300;
 }
 
@@ -110,13 +113,14 @@
   }
   
   .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
     color: #4fd1c7 !important;
   }
   
   .testimonial-card {
-    max-width: 400px;
+    max-width: 600px;
+    flex-direction: row;
   }
 }
 
@@ -126,8 +130,8 @@
   }
   
   .section-title {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     color: #4fd1c7 !important;
   }
 
@@ -135,13 +139,24 @@
     color: #4fd1c7 !important;
   }
   
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .testimonial-content {
+    align-items: center;
+    text-align: center;
+  }
+  
   .testimonial-name,
   .testimonial-company {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
   .testimonial-quote {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   .testimonial-icon {

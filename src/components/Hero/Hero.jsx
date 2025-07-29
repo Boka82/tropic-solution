@@ -2,21 +2,32 @@ import React from 'react';
 import './Hero.css';
 import laptopImage from '../../assets/laptop.png';
 import backgroundImage from '../../assets/poozadina.png';
+import logo from '../../assets/logo-pbdKMAEB.svg';
 
 const Hero = () => {
   return (
     <>      
       <section className="hero-section">
-        <div className="container hero-container">
-          <div className="hero-content">
-            <h1 className="hero-title">IT Solutions that transform your business</h1>
-            <p className="hero-subtitle">
-              Professional IT services that help your business grow and succeed in the digital world.
-            </p>
-            <a href="#contact" className="btn btn-primary">learn more</a>
+        <div className="hero-container">
+          <div className="hero-left">
+            <div className="hero-logo-section">
+              <div className="hero-logo">
+                <img src={logo} alt="Tropic Tech Solutions" className="hero-logo-img" />
+                <span className="hero-logo-text">
+                  <span className="hero-logo-line1">TROPIC TECH</span>
+                  <span className="hero-logo-line2">SOLUTIONS</span>
+                </span>
+              </div>
+            </div>
+            <div className="hero-content-section">
+              <h1 className="hero-title">IT Solutions<br />that transform<br />your business</h1>
+              <button className="hero-btn">learn more</button>
+            </div>
           </div>
-          <div className="hero-image">            
-            <img src={laptopImage} alt="IT Solutions - Laptop" className="hero-img" />
+          <div className="hero-right">
+            <div className="hero-image-container">
+              <img src={laptopImage} alt="IT Solutions - Laptop" className="hero-laptop" />
+            </div>
           </div>
         </div>
       </section>
@@ -31,17 +42,14 @@ const Hero = () => {
         <div className="who-we-are-overlay">
           <div className="container">
             <div className="who-we-are-content">
-              <h2 className="who-we-are-title">Who We Are</h2>
+              <h1 className="who-we-are-title">Who We Are</h1>
               <p className="who-we-are-text">
-                We are TropicSolutions, a leading provider of comprehensive IT services and solutions. 
-                Our mission is to help businesses leverage technology to achieve their goals through 
-                reliable, innovative, and cost-effective IT solutions. With years of experience in 
-                the industry, we understand the unique challenges businesses face in today's digital landscape.
-              </p>
-              <p className="who-we-are-text">
-                Our team of certified professionals is dedicated to delivering excellence in every project, 
-                ensuring your technology infrastructure supports your business objectives and drives growth.
-              </p>
+                 Write a paragraph that talks about your company here. You can talk
+                 about your company's background, history, mission, vision or
+                 philosophy. Anything that will introduce your brand's persona to your
+                 clients. This will help build a connection between you and them, that
+                 hopefully leads into a working relationship.
+              </p>             
             </div>
           </div>
         </div>
