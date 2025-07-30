@@ -49,12 +49,16 @@ const Testimonials = () => {
         <div className="testimonials-grid">
           {testimonialsData.map((testimonial, index) => (
             <div className="testimonial-card" key={index}>
-              <div className="testimonial-icon">
-                <PeopleIcon />
+              <div className="testimonial-header">
+                <div className="testimonial-icon">
+                  <PeopleIcon />
+                </div>
+                <div className="testimonial-info">
+                  <h3 className="testimonial-name">{testimonial.name}</h3>
+                  <h4 className="testimonial-company">{testimonial.company}</h4>
+                </div>
               </div>
               <div className="testimonial-content">
-                <h3 className="testimonial-name">{testimonial.name}</h3>
-                <h4 className="testimonial-company">{testimonial.company}</h4>
                 <p className="testimonial-quote">{testimonial.quote}</p>
               </div>
             </div>

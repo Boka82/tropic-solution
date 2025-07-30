@@ -21,7 +21,7 @@ const Footer = () => {
               
               <div className="contact-section">
                 <h4 className="contact-label">EMAIL</h4>
-                <p className="contact-value">hello@tropic.com</p>
+                <p className="contact-value">hello@tropic.ba</p>
               </div>
               
               <div className="contact-section">
